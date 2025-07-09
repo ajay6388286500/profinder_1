@@ -11,6 +11,14 @@ import RegisterPage from './layout/RegisterPage';
 import ForgotPassword from './layout/ForgotPassword';
 import MobileHeader from './layout/MobileHeader';
 import MobileMenu from './layout/MobileMenu';
+import AccountDashboard from './dashboard/AccountDashboard';
+import ResetPassword from './layout/ResetPassword';
+import CartPage from './dashboard/CartPage';
+import WishlistPage from './dashboard/WishlistPage';
+import CompareProducts from  './dashboard/CompareProducts';
+
+
+
 function App() {
 
   return (
@@ -24,8 +32,11 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="register" element={<RegisterPage />} />
             <Route path="forgot" element={<ForgotPassword />} />
+            <Route path="reset" element={<ResetPassword />} />
+
             {/* <Route path="header" element={<MobileHeader />} /> */}
             {/* <Route path="mobile" element={<MobileMenu />} /> */}
+            <Route path="account" element={<AccountDashboard />} />
 
 
 
@@ -35,13 +46,17 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="Insights" element={<Insights />} />
-            {/* <Route path="dashboards/">
-							<Route path="dashboard1" element={<Dashboard1Page />} />
-							<Route path="dashboard2" element={<Dashboard2Page />} />
+            <Route path="dashboards/">
+							<Route path="cart" element={<CartPage />} />
+							<Route path="wishlist" element={<WishlistPage />} />
+							<Route path="compare" element={<CompareProducts />} />
+
+
+							{/* <Route path="dashboard2" element={<Dashboard2Page />} />
 							<Route path="dashboard3" element={<Dashboard3Page />} />
 							<Route path="dashboard4" element={<Dashboard4Page />} />
-							<Route path="dashboard5" element={<Dashboard5Page />} />
-						</Route> */}
+							<Route path="dashboard5" element={<Dashboard5Page />} /> */}
+						</Route>
 
           </Route>
 

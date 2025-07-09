@@ -1,24 +1,25 @@
 import React from "react";
+import banner from "../../assets/imgs/banner/banner-13.png"
 
 const contactInfo = [
   {
-    icon: "assets/imgs/theme/icons/icon-location.svg",
+    icon: "../../assets/imgs/theme/icons/icon-location.svg",
     label: "Address:",
     value:
       "5171 W Campbell Ave undefined Kent, Utah 53127 United States",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-contact.svg",
+    icon: "../../assets/imgs/theme/icons/icon-contact.svg",
     label: "Call Us:",
     value: "(+91) - 540-025-124553",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-email-2.svg",
+    icon: "../../assets/imgs/theme/icons/icon-email-2.svg",
     label: "Email:",
     value: "sale@Nest.com",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-clock.svg",
+    icon: "../../assets/imgs/theme/icons/icon-clock.svg",
     label: "Hours:",
     value: "10:00 - 18:00, Mon - Sat",
   },
@@ -77,32 +78,32 @@ const footerLinks = [
 
 const featuredServices = [
   {
-    icon: "assets/imgs/theme/icons/icon-1.svg",
+    icon: "../../assets/imgs/theme/icons/icon-1.svg",
     title: "Best prices & offers",
     desc: "Orders $50 or more",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-2.svg",
+    icon: "../../assets/imgs/theme/icons/icon-2.svg",
     title: "Free delivery",
     desc: "24/7 amazing services",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-3.svg",
+    icon: "../../assets/imgs/theme/icons/icon-3.svg",
     title: "Great daily deal",
     desc: "When you sign up",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-4.svg",
+    icon: "../../assets/imgs/theme/icons/icon-4.svg",
     title: "Wide assortment",
     desc: "Mega Discounts",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-5.svg",
+    icon: "../../assets/imgs/theme/icons/icon-5.svg",
     title: "Easy returns",
     desc: "Within 30 days",
   },
   {
-    icon: "assets/imgs/theme/icons/icon-6.svg",
+    icon: "../../assets/imgs/theme/icons/icon-6.svg",
     title: "Safe delivery",
     desc: "Within 30 days",
   },
@@ -110,11 +111,11 @@ const featuredServices = [
 
 const appLinks = [
   {
-    src: "assets/imgs/theme/app-store.jpg",
+    src: "../../assets/imgs/theme/app-store.jpg",
     alt: "App Store",
   },
   {
-    src: "assets/imgs/theme/google-play.jpg",
+    src: "../../assets/imgs/theme/google-play.jpg",
     alt: "Google Play",
   },
 ];
@@ -152,7 +153,7 @@ export default function Footer() {
                     </button>
                   </form>
                 </div>
-                <img src="assets/imgs/banner/banner-13.png" alt="newsletter" />
+                <img src={banner} alt="newsletter" />
               </div>
             </div>
           </div>
@@ -194,7 +195,7 @@ export default function Footer() {
               <div className="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0">
                 <div className="logo mb-30">
                   <a href="index.html" className="mb-15">
-                    <img src="assets/imgs/theme/logo.png" alt="logo" />
+                    <img src="../../assets/imgs/theme/logo.png" alt="logo" />
                   </a>
                   <p className="font-lg text-heading">
                     Awesome grocery store website template
@@ -240,7 +241,7 @@ export default function Footer() {
               <p className="mb-20">Secured Payment Gateways</p>
               <img
                 className="wow fadeIn animated"
-                src="assets/imgs/theme/payment-method.png"
+                src="../../assets/imgs/theme/payment-method.png"
                 alt=""
               />
             </div>
@@ -263,13 +264,13 @@ export default function Footer() {
           </div>
           <div className="col-xl-4 col-lg-6 text-center d-none d-xl-block">
             <div className="hotline d-lg-inline-flex mr-30">
-              <img src="assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
+              <img src="../../assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
               <p>
                 1900 - 6666<span>Working 8:00 - 22:00</span>
               </p>
             </div>
             <div className="hotline d-lg-inline-flex">
-              <img src="assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
+              <img src="../../assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
               <p>
                 1900 - 8888<span>24/7 Support Center</span>
               </p>
@@ -281,7 +282,7 @@ export default function Footer() {
               {socialIcons.map((icon, idx) => (
                 <a href="#" key={idx}>
                   <img
-                    src={`assets/imgs/theme/icons/${icon}.svg`}
+                    src={`../../assets/imgs/theme/icons/${icon}.svg`}
                     alt={icon}
                   />
                 </a>

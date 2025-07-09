@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   const [formData, setFormData] = useState({
@@ -108,13 +109,13 @@ const ForgotPassword = () => {
                     </div>
 
                     <div className="form-group">
-                      <button
+                    <Link to= "/reset">   <button
                         type="submit"
                         className="btn btn-heading btn-block hover-up"
                         name="login"
                       >
                         Reset password
-                      </button>
+                      </button></Link>
                     </div>
                   </form>
                 </div>

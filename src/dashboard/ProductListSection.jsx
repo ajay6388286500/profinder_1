@@ -115,7 +115,7 @@ const productData = [
 
 const ProductListSection = () => {
   return (
-    <section className="section-padding mb-30">
+    <section className="section-padding ">
       <div className="container">
         <div className="row">
           {productData.map((column, idx) => (

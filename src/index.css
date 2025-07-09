@@ -4,10 +4,11 @@
 
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1300px !important;
+        max-width: 1320px !important;
     }
 }
 
 .footer_wrapper ul{
    padding-left: 0;
 }
+

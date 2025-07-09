@@ -72,7 +72,7 @@ const ProductGrid = ({ products }) => (
     {products.map((product, index) => (
       <div
         key={index}
-        className={`col-lg-1-5 col-md-4 col-12 col-sm-6 ${index === 0 ? 'd-none d-xl-block' : ''}`}
+        className={`col-lg-1-5 col-md-3 col-12 col-sm-6 ${index === 0 ? 'd-none d-xl-block' : ''}`}
       >
         <ProductCard product={product} />
       </div>
@@ -99,6 +99,16 @@ const ProductTabs = () => {
   // Sample product data
   const sampleProducts = [
     {
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
+      hoverImage: 'https://via.placeholder.com/300x300?text=Hover',
+      title: 'Product Two',
+      category: 'Category B',
+      price: 19.99,
+      rating: 3.8,
+      vendor: 'Vendor B',
+      badge: 'New',
+      badgeClass: 'new',
+    },{
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
       hoverImage: 'https://via.placeholder.com/300x300?text=Hover',
       title: 'Product One',

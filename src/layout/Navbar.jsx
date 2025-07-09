@@ -14,20 +14,20 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
   <div>
-      <header className="header-area header-style-1 header-height-2">
+      <header className="header-area header-style-1 header-height-2 shadow-sm ">
       <div className="mobile-promotion">
         <span>
           Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left
         </span>
       </div>
 
-      <div className="header-middle header-middle-ptb-1 d-none d-lg-block">
+      <div className="header-middle header-middle-ptb-1 d-none d-lg-block bg-white">
         <div className="container">
           <div className="header-wrap">
             <div className="logo logo-width-1">
-              <a href="/">
+              <Link to="/">
                 <img src={logo} alt="logo" />
-              </a>
+              </Link>
             </div>
             <div className="header-right">
               <div className="search-style-2">
@@ -56,9 +56,9 @@ const Navbar = () => {
                       <img className="svgInject" alt="Nest" src={iconCompare} />
                       <span className="pro-count blue">3</span>
                     </a>
-                    <a href="shop-compare.html">
-                      <span className="lable ml-0">Compare</span>
-                    </a>
+                    {/* <a href="shop-compare.html"> */}
+                    <Link to="/dashboards/compare">  <span className="lable ml-0">Compare</span></Link>
+                    {/* </a> */}
                   </div>
 
                   <div className="header-action-icon-2">
@@ -66,9 +66,9 @@ const Navbar = () => {
                       <img className="svgInject" alt="Nest" src={iconHeart} />
                       <span className="pro-count blue">6</span>
                     </a>
-                    <a href="shop-wishlist.html">
-                      <span className="lable">Wishlist</span>
-                    </a>
+                    {/* <a href="shop-wishlist.html"> */}
+                   <Link to="/dashboards/wishlist">   <span className="lable">Wishlist</span></Link>
+                    {/* </a> */}
                   </div>
 
                   <div className="header-action-icon-2">
@@ -76,9 +76,9 @@ const Navbar = () => {
                       <img alt="Nest" src={iconCart} />
                       <span className="pro-count blue">2</span>
                     </a>
-                    <a href="shop-cart.html">
-                      <span className="lable">Cart</span>
-                    </a>
+                    {/* <a href="shop-cart.html"> */}
+                    <Link to="/dashboards/cart">  <span className="lable">Cart</span></Link>
+                    {/* </a> */}
                   </div>
 
                   <div className="header-action-icon-2">

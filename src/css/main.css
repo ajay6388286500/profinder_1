@@ -6742,7 +6742,7 @@ h6.post-title {
   color: #253D4E;
 }
 .header-style-1 .header-middle-ptb-1 {
-  padding: 20px 20px  0px 20px;
+  padding: 25px 20px  25px 20px;
 }
 .header-style-1 .select2-container {
   max-width: unset;
@@ -7858,14 +7858,18 @@ footer .hotline img {
 }
 .newsletter .newsletter-inner .newsletter-content form input {
   border: 0;
+  border: 1px solid blue;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
   background: url(../imgs/theme/icons/icon-plane.png) no-repeat 25px center;
 }
 .newsletter .newsletter-inner .newsletter-content form button {
-  border: 0;
-  border-radius: 50px;
-  font-weight: 700;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 700;
+    border-radius: 50px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 
 .widget-about {

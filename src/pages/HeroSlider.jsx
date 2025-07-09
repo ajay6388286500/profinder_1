@@ -7,7 +7,7 @@ const HeroSlider = () => {
   return (
     <section className="home-slider position-relative mb-30">
       <div className="container">
-        <div className="home-slide-cover mt-30">
+        <div className="home-slide-cover mt-2">
           <Carousel fade indicators>
             <Carousel.Item>
               <div

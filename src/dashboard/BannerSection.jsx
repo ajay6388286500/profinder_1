@@ -2,7 +2,7 @@ import React from "react";
 
 const bannerData = [
   {
-    img: "assets/imgs/banner/banner-1.png",
+    img: "../../assets/imgs/banner/banner-1.png",
     title: (
       <>
         Everyday Fresh &amp; <br />
@@ -13,7 +13,7 @@ const bannerData = [
     delay: "0s",
   },
   {
-    img: "assets/imgs/banner/banner-2.png",
+    img: "../../assets/imgs/banner/banner-2.png",
     title: (
       <>
         Make your Breakfast <br />
@@ -23,7 +23,7 @@ const bannerData = [
     delay: ".2s",
   },
   {
-    img: "assets/imgs/banner/banner-3.png",
+    img: "../../assets/imgs/banner/banner-3.png",
     title: (
       <>
         The best Organic <br />
