@@ -2,7 +2,7 @@ import React from "react";
 
 const productData = [
   {
-    image: "assets/imgs/banner/banner-5.png",
+    image: "../../assets/imgs/banner/banner-5.png",
     countdown: "2025/12/25 00:00:00",
     title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
     rating: 4.0,
@@ -13,7 +13,7 @@ const productData = [
     visibility: "",
   },
   {
-    image: "assets/imgs/banner/banner-6.png",
+    image: "../../assets/imgs/banner/banner-6.png",
     countdown: "2026/04/25 00:00:00",
     title: "Perdue Simply Smart Organics Gluten Free",
     rating: 4.0,
@@ -24,7 +24,7 @@ const productData = [
     visibility: "",
   },
   {
-    image: "assets/imgs/banner/banner-7.png",
+    image: "../../assets/imgs/banner/banner-7.png",
     countdown: "2027/03/25 00:00:00",
     title: "Signature Wood-Fired Mushroom and Caramelized",
     rating: 3.0,
@@ -35,7 +35,7 @@ const productData = [
     visibility: "d-none d-lg-block",
   },
   {
-    image: "assets/imgs/banner/banner-8.png",
+    image: "../../assets/imgs/banner/banner-8.png",
     countdown: "2025/02/25 00:00:00",
     title: "Simply Lemonade with Raspberry Juice",
     rating: 3.0,

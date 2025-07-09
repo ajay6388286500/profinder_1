@@ -45,7 +45,7 @@ const ForgotPassword = () => {
                   <div className="heading_s1 text-center">
                     <img
                       className="border-radius-15"
-                      src="assets/imgs/page/forgot_password.svg"
+                      src="../../assets/imgs/page/forgot_password.svg"
                       alt="Forgot Password"
                     />
                     <h2 className="mb-15 mt-15">Forgot your password?</h2>
