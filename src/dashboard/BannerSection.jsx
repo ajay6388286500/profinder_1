@@ -1,8 +1,11 @@
 import React from "react";
+import banner1 from '../../assets/imgs/banner/banner-1.png';
+import banner2 from '../../assets/imgs/banner/banner-2.png';
+import banner3 from '../../assets/imgs/banner/banner-3.png';
 
 const bannerData = [
   {
-    img: "../../assets/imgs/banner/banner-1.png",
+    img: banner1,
     title: (
       <>
         Everyday Fresh &amp; <br />
@@ -13,7 +16,7 @@ const bannerData = [
     delay: "0s",
   },
   {
-    img: "../../assets/imgs/banner/banner-2.png",
+    img: banner2,
     title: (
       <>
         Make your Breakfast <br />
@@ -23,7 +26,7 @@ const bannerData = [
     delay: ".2s",
   },
   {
-    img: "../../assets/imgs/banner/banner-3.png",
+    img: banner3,
     title: (
       <>
         The best Organic <br />
@@ -43,9 +46,7 @@ const BannerSection = () => {
           {bannerData.map((banner, index) => (
             <div
               key={index}
-              className={`col-lg-4 col-md-6 ${
-                banner.additionalClasses || ""
-              }`}
+              className={`col-lg-4 col-md-6 ${banner.additionalClasses || ""}`}
             >
               <div
                 className="banner-img wow animate__animated animate__fadeInUp"
