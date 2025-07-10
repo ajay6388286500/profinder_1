@@ -24,7 +24,7 @@ const ShopPage = () => {
   return (
     <main className="main profinder-background">
       {/* Page Header */}
-      <div className="page-header pt-30 mb-50">
+      <div className="page-header pt-30 pb-50">
         <div className="container">
           <div className="archive-header">
             <div className="row align-items-center">
@@ -54,7 +54,7 @@ const ShopPage = () => {
       </div>
 
       {/* Main Content */}
-       <div className="container mb-30">
+       <div className="container pb-30">
       <div className="row">
         {/* Product List */}
         <div className="col-lg-9">
