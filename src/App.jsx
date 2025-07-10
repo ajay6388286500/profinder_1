@@ -17,6 +17,7 @@ import CartPage from './dashboard/CartPage';
 import WishlistPage from './dashboard/WishlistPage';
 import CompareProducts from  './dashboard/CompareProducts';
 import ShopPage from './shop/ShopPage';
+import BlogPage from './dashboard/BlogPage';
 
 
 
@@ -53,6 +54,9 @@ function App() {
 							<Route path="wishlist" element={<WishlistPage />} />
 							<Route path="compare" element={<CompareProducts />} />
 							<Route path="shop" element={<ShopPage />} />
+							<Route path="blog" element={<BlogPage />} />
+
+
 					
 
 

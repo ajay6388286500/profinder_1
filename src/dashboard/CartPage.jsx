@@ -34,7 +34,7 @@ const CartPage = () => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   return (
-    <main className="main">
+    <main className="main profinder-background">
       <div className="page-header breadcrumb-wrap">
         <div className="container">
           <div className="breadcrumb">
@@ -46,7 +46,7 @@ const CartPage = () => {
         </div>
       </div>
 
-      <div className="container mb-80 mt-50">
+      <div className="container  mt-50">
         <div className="row">
           <div className="col-lg-8 mb-40">
             <h1 className="heading-2 mb-10">Your Cart</h1>

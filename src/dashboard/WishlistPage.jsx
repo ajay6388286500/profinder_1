@@ -58,7 +58,7 @@ const wishlistItems = [
 
 const WishlistPage = () => {
   return (
-    <main className="main">
+    <main className="main profinder-background">
       <div className="page-header breadcrumb-wrap">
         <div className="container">
           <div className="breadcrumb">
@@ -70,7 +70,7 @@ const WishlistPage = () => {
         </div>
       </div>
 
-      <div className="container mb-30 mt-50">
+      <div className="container  mt-50">
         <div className="row">
           <div className="col-xl-10 col-lg-12 m-auto">
             <div className="mb-50">

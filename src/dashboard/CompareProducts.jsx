@@ -5,7 +5,7 @@ import productImg3 from '../../assets/imgs/shop/product-3-1.jpg';
 
 const CompareProducts = () => {
   return (
-    <main className="main">
+    <main className="main profinder-background">
       <div className="page-header breadcrumb-wrap">
         <div className="container">
           <div className="breadcrumb">
