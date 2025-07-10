@@ -2,6 +2,7 @@ import React from "react";
 import banner1 from '../../assets/imgs/banner/banner-1.png';
 import banner2 from '../../assets/imgs/banner/banner-2.png';
 import banner3 from '../../assets/imgs/banner/banner-3.png';
+import { Link } from "react-router-dom";
 
 const bannerData = [
   {
@@ -55,9 +56,9 @@ const BannerSection = () => {
                 <img src={banner.img} alt="banner" />
                 <div className="banner-text">
                   <h4>{banner.title}</h4>
-                  <a href="shop-grid-right.html" className="btn btn-xs">
+                  <Link to="/dashboards/shop" className="btn btn-xs">
                     Shop Now <i className="fi-rs-arrow-small-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

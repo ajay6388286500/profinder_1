@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Product Card Component
 const ProductCard = ({ product }) => (
@@ -52,14 +53,14 @@ const ProductCard = ({ product }) => (
       </div>
       <div className="product-card-bottom">
         <div className="product-price">
-          <span>${product.price}</span>
-          {product.oldPrice && <span className="old-price">${product.oldPrice}</span>}
+          <span>£{product.price}</span>
+          {product.oldPrice && <span className="old-price">£{product.oldPrice}</span>}
         </div>
         <div className="add-cart">
-          <a className="add" href="shop-cart.html">
+          <Link className="add" to="/dashboards/cart">     
             <i className="fi-rs-shopping-cart mr-5" />
             Add
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -175,7 +176,7 @@ const ProductTabs = () => {
           <ul className="nav nav-tabs links" id="myTab" role="tablist">
             {tabData.map((tab) => (
               <li className="nav-item" role="presentation" key={tab.id}>
-                <button
+               <button
                   className={`nav-link ${activeTab === tab.id ? 'active' : ''}`}
                   id={`nav-tab-${tab.id.split('-')[1]}`}
                   data-bs-toggle="tab"

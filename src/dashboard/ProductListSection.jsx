@@ -11,6 +11,7 @@ import thumb9 from "../../assets/imgs/shop/thumbnail-9.jpg";
 import thumb10 from "../../assets/imgs/shop/thumbnail-10.jpg";
 import thumb11 from "../../assets/imgs/shop/thumbnail-11.jpg";
 import thumb12 from "../../assets/imgs/shop/thumbnail-12.jpg";
+import { Link } from "react-router-dom";
 
 const productData = [
   {
@@ -152,14 +153,14 @@ const ProductListSection = () => {
                     key={i}
                   >
                     <figure className="col-md-4 mb-0 h-100 d-flex align-items-center">
-                      <a href="shop-product-right.html" className="w-100">
+                      <Link to="/dashboards/shop" className="w-100">
                         <img
                           src={item.image}
                           alt={item.name}
                           className="img-fluid"
                           style={{ maxHeight: "100px", objectFit: "contain" }}
                         />
-                      </a>
+                      </Link>
                     </figure>
                     <div className="col-md-8 d-flex flex-column justify-content-between h-100">
                       <div>
@@ -182,8 +183,8 @@ const ProductListSection = () => {
                         </div>
                       </div>
                       <div className="product-price">
-                        <span>{item.price}</span>
-                        <span className="old-price ml-1">{item.oldPrice}</span>
+                        <span>£{item.price}</span>
+                        <span className="old-price ml-1">£{item.oldPrice}</span>
                       </div>
                     </div>
                   </article>

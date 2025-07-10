@@ -3,6 +3,7 @@ import banner5 from "../../assets/imgs/banner/banner-5.png";
 import banner6 from "../../assets/imgs/banner/banner-6.png";
 import banner7 from "../../assets/imgs/banner/banner-7.png";
 import banner8 from "../../assets/imgs/banner/banner-8.png";
+import { Link } from "react-router-dom";
 
 const productData = [
   {
@@ -114,14 +115,14 @@ const DealsOfTheDay = () => {
                     </div>
                     <div className="product-card-bottom">
                       <div className="product-price">
-                        <span>${product.price}</span>
-                        <span className="old-price">${product.oldPrice}</span>
+                        <span>£{product.price}</span>
+                        <span className="old-price">£{product.oldPrice}</span>
                       </div>
                       <div className="add-cart">
-                        <a className="add" href="shop-cart.html">
+                        <Link className="add" to="/dashboards/cart">
                           <i className="fi-rs-shopping-cart mr-5" />
                           Add{" "}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

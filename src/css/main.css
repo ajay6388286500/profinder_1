@@ -958,6 +958,7 @@ button.submit:hover, button[type=submit]:hover {
   display: inline-flex;
   flex-wrap: wrap;
   line-height: 1.3;
+  border: 1px solid;
 }
 .btn.btn-xs i, .button.btn-xs i {
   font-size: 14px !important;
