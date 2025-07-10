@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+// ✅ Import image statically
+import forgotImage from "../../assets/imgs/page/forgot_password.svg";
+
 const ForgotPassword = () => {
   const [formData, setFormData] = useState({
     emailOrUsername: "",
@@ -18,7 +21,7 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle the API call or form validation here
+    // Handle API or form validation
     console.log("Form submitted:", formData);
   };
 
@@ -27,10 +30,10 @@ const ForgotPassword = () => {
       <div className="page-header breadcrumb-wrap">
         <div className="container">
           <div className="breadcrumb">
-            <a href="/" rel="nofollow">
+            <Link to="/" rel="nofollow">
               <i className="fi-rs-home mr-5" />
               Home
-            </a>
+            </Link>
             <span> / Pages / My Account</span>
           </div>
         </div>
@@ -45,7 +48,7 @@ const ForgotPassword = () => {
                   <div className="heading_s1 text-center">
                     <img
                       className="border-radius-15"
-                      src="../../assets/imgs/page/forgot_password.svg"
+                      src={forgotImage}
                       alt="Forgot Password"
                     />
                     <h2 className="mb-15 mt-15">Forgot your password?</h2>
@@ -109,13 +112,15 @@ const ForgotPassword = () => {
                     </div>
 
                     <div className="form-group">
-                    <Link to= "/reset">   <button
-                        type="submit"
-                        className="btn btn-heading btn-block hover-up"
-                        name="login"
-                      >
-                        Reset password
-                      </button></Link>
+                      <Link to="/reset">
+                        <button
+                          type="submit"
+                          className="btn btn-heading btn-block hover-up"
+                          name="login"
+                        >
+                          Reset password
+                        </button>
+                      </Link>
                     </div>
                   </form>
                 </div>

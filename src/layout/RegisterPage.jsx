@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// ✅ Static image imports
+import facebookIcon from '../../assets/imgs/theme/icons/logo-facebook.svg';
+import googleIcon from '../../assets/imgs/theme/icons/logo-google.svg';
+import appleIcon from '../../assets/imgs/theme/icons/logo-apple.svg';
+
 const RegisterPage = () => {
   return (
     <main className="main pages profinder-background">
       <div className="page-header breadcrumb-wrap">
         <div className="container">
           <div className="breadcrumb">
-            <a href="/" rel="nofollow">
+            <Link to="/" rel="nofollow">
               Home <i className="fi-rs-home mr-5" />
-            </a>
+            </Link>
             <span> / Pages / My Account</span>
           </div>
         </div>
@@ -99,9 +104,9 @@ const RegisterPage = () => {
                               </label>
                             </div>
                           </div>
-                          <a href="/privacy-policy">
+                          <Link to="/privacy-policy">
                             <i className="fi-rs-book-alt mr-5 text-muted" /> Learn more
-                          </a>
+                          </Link>
                         </div>
 
                         <div className="form-group mb-30">
@@ -121,17 +126,17 @@ const RegisterPage = () => {
                 </div>
 
                 <div className="col-lg-6 pr-30 d-none d-lg-block">
-                  <div className="card-login mt-115">
+                  <div className="card-login mt-145">
                     <a href="#" className="social-login facebook-login">
-                      <img src="../../assets/imgs/theme/icons/logo-facebook.svg" alt="facebook" />
+                      <img src={facebookIcon} alt="facebook" />
                       <span>Continue with Facebook</span>
                     </a>
                     <a href="#" className="social-login google-login">
-                      <img src="../../assets/imgs/theme/icons/logo-google.svg" alt="google" />
+                      <img src={googleIcon} alt="google" />
                       <span>Continue with Google</span>
                     </a>
                     <a href="#" className="social-login apple-login">
-                      <img src="../../assets/imgs/theme/icons/logo-apple.svg" alt="apple" />
+                      <img src={appleIcon} alt="apple" />
                       <span>Continue with Apple</span>
                     </a>
                   </div>

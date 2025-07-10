@@ -1,4 +1,5 @@
 import React from "react";
+import resetPasswordImg from "../../assets/imgs/page/reset_password.svg";
 
 export default function ResetPassword() {
   return (
@@ -22,7 +23,7 @@ export default function ResetPassword() {
                 <div className="heading_s1">
                   <img
                     className="border-radius-15"
-                    src="../../assets/imgs/page/reset_password.svg"
+                    src={resetPasswordImg}
                     alt="Reset Password"
                   />
                   <h2 className="mb-15 mt-15">Set new password</h2>

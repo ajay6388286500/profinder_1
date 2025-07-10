@@ -1,131 +1,84 @@
 import React from "react";
-import banner from "../../assets/imgs/banner/banner-13.png"
+
+// Banner
+import banner from "../../assets/imgs/banner/banner-13.png";
+
+// Theme images
+import logo from "../../assets/imgs/theme/logo.png";
+import paymentMethod from "../../assets/imgs/theme/payment-method.png";
+
+// Contact Icons
+import iconLocation from "../../assets/imgs/theme/icons/icon-location.svg";
+import iconContact from "../../assets/imgs/theme/icons/icon-contact.svg";
+import iconEmail from "../../assets/imgs/theme/icons/icon-email-2.svg";
+import iconClock from "../../assets/imgs/theme/icons/icon-clock.svg";
+import phoneIcon from "../../assets/imgs/theme/icons/phone-call.svg";
+
+// Featured Services
+import icon1 from "../../assets/imgs/theme/icons/icon-1.svg";
+import icon2 from "../../assets/imgs/theme/icons/icon-2.svg";
+import icon3 from "../../assets/imgs/theme/icons/icon-3.svg";
+import icon4 from "../../assets/imgs/theme/icons/icon-4.svg";
+import icon5 from "../../assets/imgs/theme/icons/icon-5.svg";
+import icon6 from "../../assets/imgs/theme/icons/icon-6.svg";
+
+// App Links
+import appStore from "../../assets/imgs/theme/app-store.jpg";
+import googlePlay from "../../assets/imgs/theme/google-play.jpg";
+
+// Social Icons
+import facebookIcon from "../../assets/imgs/theme/icons/icon-facebook-white.svg";
+import twitterIcon from "../../assets/imgs/theme/icons/icon-twitter-white.svg";
+import instagramIcon from "../../assets/imgs/theme/icons/icon-instagram-white.svg";
+import pinterestIcon from "../../assets/imgs/theme/icons/icon-pinterest-white.svg";
+import youtubeIcon from "../../assets/imgs/theme/icons/icon-youtube-white.svg";
 
 const contactInfo = [
-  {
-    icon: "../../assets/imgs/theme/icons/icon-location.svg",
-    label: "Address:",
-    value:
-      "5171 W Campbell Ave undefined Kent, Utah 53127 United States",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-contact.svg",
-    label: "Call Us:",
-    value: "(+91) - 540-025-124553",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-email-2.svg",
-    label: "Email:",
-    value: "sale@Nest.com",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-clock.svg",
-    label: "Hours:",
-    value: "10:00 - 18:00, Mon - Sat",
-  },
+  { icon: iconLocation, label: "Address:", value: "5171 W Campbell Ave undefined Kent, Utah 53127 United States" },
+  { icon: iconContact, label: "Call Us:", value: "(+91) - 540-025-124553" },
+  { icon: iconEmail, label: "Email:", value: "sale@Nest.com" },
+  { icon: iconClock, label: "Hours:", value: "10:00 - 18:00, Mon - Sat" },
 ];
 
 const footerLinks = [
   {
     title: "Company",
-    links: [
-      "About Us",
-      "Delivery Information",
-      "Privacy Policy",
-      "Terms & Conditions",
-      "Contact Us",
-      "Support Center",
-      "Careers",
-    ],
+    links: ["About Us", "Delivery Information", "Privacy Policy", "Terms & Conditions", "Contact Us", "Support Center", "Careers"],
   },
   {
     title: "Account",
-    links: [
-      "Sign In",
-      "View Cart",
-      "My Wishlist",
-      "Track My Order",
-      "Help Ticket",
-      "Shipping Details",
-      "Compare products",
-    ],
+    links: ["Sign In", "View Cart", "My Wishlist", "Track My Order", "Help Ticket", "Shipping Details", "Compare products"],
   },
   {
     title: "Corporate",
-    links: [
-      "Become a Vendor",
-      "Affiliate Program",
-      "Farm Business",
-      "Farm Careers",
-      "Our Suppliers",
-      "Accessibility",
-      "Promotions",
-    ],
+    links: ["Become a Vendor", "Affiliate Program", "Farm Business", "Farm Careers", "Our Suppliers", "Accessibility", "Promotions"],
   },
   {
     title: "Popular",
-    links: [
-      "Milk & Flavoured Milk",
-      "Butter and Margarine",
-      "Eggs Substitutes",
-      "Marmalades",
-      "Sour Cream and Dips",
-      "Tea & Kombucha",
-      "Cheese",
-    ],
+    links: ["Milk & Flavoured Milk", "Butter and Margarine", "Eggs Substitutes", "Marmalades", "Sour Cream and Dips", "Tea & Kombucha", "Cheese"],
   },
 ];
 
 const featuredServices = [
-  {
-    icon: "../../assets/imgs/theme/icons/icon-1.svg",
-    title: "Best prices & offers",
-    desc: "Orders $50 or more",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-2.svg",
-    title: "Free delivery",
-    desc: "24/7 amazing services",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-3.svg",
-    title: "Great daily deal",
-    desc: "When you sign up",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-4.svg",
-    title: "Wide assortment",
-    desc: "Mega Discounts",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-5.svg",
-    title: "Easy returns",
-    desc: "Within 30 days",
-  },
-  {
-    icon: "../../assets/imgs/theme/icons/icon-6.svg",
-    title: "Safe delivery",
-    desc: "Within 30 days",
-  },
+  { icon: icon1, title: "Best prices & offers", desc: "Orders $50 or more" },
+  { icon: icon2, title: "Free delivery", desc: "24/7 amazing services" },
+  { icon: icon3, title: "Great daily deal", desc: "When you sign up" },
+  { icon: icon4, title: "Wide assortment", desc: "Mega Discounts" },
+  { icon: icon5, title: "Easy returns", desc: "Within 30 days" },
+  { icon: icon6, title: "Safe delivery", desc: "Within 30 days" },
 ];
 
 const appLinks = [
-  {
-    src: "../../assets/imgs/theme/app-store.jpg",
-    alt: "App Store",
-  },
-  {
-    src: "../../assets/imgs/theme/google-play.jpg",
-    alt: "Google Play",
-  },
+  { src: appStore, alt: "App Store" },
+  { src: googlePlay, alt: "Google Play" },
 ];
 
 const socialIcons = [
-  "icon-facebook-white",
-  "icon-twitter-white",
-  "icon-instagram-white",
-  "icon-pinterest-white",
-  "icon-youtube-white",
+  { icon: facebookIcon, name: "facebook" },
+  { icon: twitterIcon, name: "twitter" },
+  { icon: instagramIcon, name: "instagram" },
+  { icon: pinterestIcon, name: "pinterest" },
+  { icon: youtubeIcon, name: "youtube" },
 ];
 
 export default function Footer() {
@@ -195,7 +148,7 @@ export default function Footer() {
               <div className="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0">
                 <div className="logo mb-30">
                   <a href="index.html" className="mb-15">
-                    <img src="../../assets/imgs/theme/logo.png" alt="logo" />
+                    <img src={logo} alt="logo" />
                   </a>
                   <p className="font-lg text-heading">
                     Awesome grocery store website template
@@ -241,8 +194,8 @@ export default function Footer() {
               <p className="mb-20">Secured Payment Gateways</p>
               <img
                 className="wow fadeIn animated"
-                src="../../assets/imgs/theme/payment-method.png"
-                alt=""
+                src={paymentMethod}
+                alt="payment methods"
               />
             </div>
           </div>
@@ -264,13 +217,13 @@ export default function Footer() {
           </div>
           <div className="col-xl-4 col-lg-6 text-center d-none d-xl-block">
             <div className="hotline d-lg-inline-flex mr-30">
-              <img src="../../assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
+              <img src={phoneIcon} alt="hotline" />
               <p>
                 1900 - 6666<span>Working 8:00 - 22:00</span>
               </p>
             </div>
             <div className="hotline d-lg-inline-flex">
-              <img src="../../assets/imgs/theme/icons/phone-call.svg" alt="hotline" />
+              <img src={phoneIcon} alt="hotline" />
               <p>
                 1900 - 8888<span>24/7 Support Center</span>
               </p>
@@ -279,12 +232,9 @@ export default function Footer() {
           <div className="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
             <div className="mobile-social-icon">
               <h6>Follow Us</h6>
-              {socialIcons.map((icon, idx) => (
+              {socialIcons.map((social, idx) => (
                 <a href="#" key={idx}>
-                  <img
-                    src={`../../assets/imgs/theme/icons/${icon}.svg`}
-                    alt={icon}
-                  />
+                  <img src={social.icon} alt={social.name} />
                 </a>
               ))}
             </div>

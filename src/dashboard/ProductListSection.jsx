@@ -1,4 +1,16 @@
 import React from "react";
+import thumb1 from "../../assets/imgs/shop/thumbnail-1.jpg";
+import thumb2 from "../../assets/imgs/shop/thumbnail-2.jpg";
+import thumb3 from "../../assets/imgs/shop/thumbnail-3.jpg";
+import thumb4 from "../../assets/imgs/shop/thumbnail-4.jpg";
+import thumb5 from "../../assets/imgs/shop/thumbnail-5.jpg";
+import thumb6 from "../../assets/imgs/shop/thumbnail-6.jpg";
+import thumb7 from "../../assets/imgs/shop/thumbnail-7.jpg";
+import thumb8 from "../../assets/imgs/shop/thumbnail-8.jpg";
+import thumb9 from "../../assets/imgs/shop/thumbnail-9.jpg";
+import thumb10 from "../../assets/imgs/shop/thumbnail-10.jpg";
+import thumb11 from "../../assets/imgs/shop/thumbnail-11.jpg";
+import thumb12 from "../../assets/imgs/shop/thumbnail-12.jpg";
 
 const productData = [
   {
@@ -6,21 +18,21 @@ const productData = [
     delay: "0s",
     items: [
       {
-        image: "../../assets/imgs/shop/thumbnail-1.jpg",
+        image: thumb1,
         name: "Nestle Original Coffee-Mate Coffee Creamer",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-2.jpg",
+        image: thumb2,
         name: "Nestle Original Coffee-Mate Coffee Creamer",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-3.jpg",
+        image: thumb3,
         name: "Nestle Original Coffee-Mate Coffee Creamer",
         price: "$32.85",
         oldPrice: "$33.8",
@@ -33,21 +45,21 @@ const productData = [
     delay: ".1s",
     items: [
       {
-        image: "../../assets/imgs/shop/thumbnail-4.jpg",
+        image: thumb4,
         name: "Organic Cage-Free Grade A Large Brown Eggs",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-5.jpg",
+        image: thumb5,
         name: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-6.jpg",
+        image: thumb6,
         name: "Naturally Flavored Cinnamon Vanilla Light Roast Coffee",
         price: "$32.85",
         oldPrice: "$33.8",
@@ -61,21 +73,21 @@ const productData = [
     className: "d-none d-lg-block",
     items: [
       {
-        image: "../../assets/imgs/shop/thumbnail-7.jpg",
+        image: thumb7,
         name: "Pepperidge Farm Farmhouse Hearty White Bread",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-8.jpg",
+        image: thumb8,
         name: "Organic Frozen Triple Berry Blend",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-9.jpg",
+        image: thumb9,
         name: "Oroweat Country Buttermilk Bread",
         price: "$32.85",
         oldPrice: "$33.8",
@@ -89,21 +101,21 @@ const productData = [
     className: "d-none d-xl-block",
     items: [
       {
-        image: "../../assets/imgs/shop/thumbnail-10.jpg",
+        image: thumb10,
         name: "Foster Farms Takeout Crispy Classic Buffalo Wings",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-11.jpg",
+        image: thumb11,
         name: "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
         price: "$32.85",
         oldPrice: "$33.8",
         rating: "90%",
       },
       {
-        image: "../../assets/imgs/shop/thumbnail-12.jpg",
+        image: thumb12,
         name: "All Natural Italian-Style Chicken Meatballs",
         price: "$32.85",
         oldPrice: "$33.8",
@@ -112,6 +124,7 @@ const productData = [
     ],
   },
 ];
+
 
 const ProductListSection = () => {
   return (

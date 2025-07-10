@@ -1,8 +1,12 @@
 import React from "react";
+import banner5 from "../../assets/imgs/banner/banner-5.png";
+import banner6 from "../../assets/imgs/banner/banner-6.png";
+import banner7 from "../../assets/imgs/banner/banner-7.png";
+import banner8 from "../../assets/imgs/banner/banner-8.png";
 
 const productData = [
   {
-    image: "../../assets/imgs/banner/banner-5.png",
+    image: banner5,
     countdown: "2025/12/25 00:00:00",
     title: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
     rating: 4.0,
@@ -13,7 +17,7 @@ const productData = [
     visibility: "",
   },
   {
-    image: "../../assets/imgs/banner/banner-6.png",
+    image: banner6,
     countdown: "2026/04/25 00:00:00",
     title: "Perdue Simply Smart Organics Gluten Free",
     rating: 4.0,
@@ -24,7 +28,7 @@ const productData = [
     visibility: "",
   },
   {
-    image: "../../assets/imgs/banner/banner-7.png",
+    image: banner7,
     countdown: "2027/03/25 00:00:00",
     title: "Signature Wood-Fired Mushroom and Caramelized",
     rating: 3.0,
@@ -35,7 +39,7 @@ const productData = [
     visibility: "d-none d-lg-block",
   },
   {
-    image: "../../assets/imgs/banner/banner-8.png",
+    image: banner8,
     countdown: "2025/02/25 00:00:00",
     title: "Simply Lemonade with Raspberry Juice",
     rating: 3.0,
@@ -46,6 +50,7 @@ const productData = [
     visibility: "d-none d-xl-block",
   },
 ];
+
 
 const DealsOfTheDay = () => {
   return (
